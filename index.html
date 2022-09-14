@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+</head>
+
+<body>
+    <!-- Buttons links -->
+    <header>
+        <a href="#" class="logo">Mimi</a>
+        <ul>
+            <li><a href="#btn" class="active">HOME</a></li>
+            <li><a href="#sec">ABOUT</a></li>
+            <li><a href="#port">PORTFOLIO</a></li>
+            <li><a href="#form">CONTACT</a></li>
+        </ul>
+    </header>
+    <section>
+
+        <!-- Background -->
+        <img src="./images/mountains.gif" id="mountain">
+        <h2 id="text">Minh .T</h2>
+        <a href="#sec" id="btn">Explore</a>
+    </section>
+    <div class="sec" id="sec">
+        <h2>ME, MYSELF & I</h2>
+        <p>Hello! I'm a future Web Developer located in Ontario. I have a serious passion for Web Development, hopefully I can learn UI effects, animations and making intuitive, dynamic user experiences.<br></br>Well-organized person, problem solver, independant employee with high attention to detail. Fan of anime, loves music, outdoor activies and learning languages.<br></br>Interested in working with positive and ambitious people.</p>
+    </div>
+
+    <!-- Portfolio -->
+    <h2>PORTFOLIO</h2>
+    <div class="port" href="#port">
+        <div class="box" id="port">
+            <img src="./images/test.png" alt="test">
+        </div>
+        <div class="box">
+            <img src="./images/test.jpg" alt="test">
+        </div>
+
+        <div class="box">
+            <img src="./images/sus.gif" alt="test">
+        </div>
+
+        <div class="box">
+            <img src="./images/Reeee.gif" alt="test">
+        </div>
+    </div>
+
+    <!-- Contact me -->
+    <section class="Cap">
+        <div class="form-wrapper" href="#form">
+            <div class="heading"></div>
+            <h2>CONTACT</h2>
+            <div class="form-input" id="form">
+                <input type="text" placeholder="Your Name">
+            </div>
+            <div class="form-input">
+                <input type="text" placeholder="Your Email">
+            </div>
+            <div class="form-input">
+                <input type="text" placeholder="Subject">
+            </div>
+            <div class="form-input">
+                <input type="text" placeholder="Your Message">
+            </div>
+
+            <div class="button">SEND MESSAGGE</div>
+        </div>
+    </section>
+
+    <!-- Minh. T Name -->
+    <script>
+        let mountain = document.getElementById('mountain');
+        let text = document.getElementById('text');
+        let btn = document.getElementById('btn');
+        let header = document.querySelector('header');
+
+        window.addEventListener('scroll', function(){
+            let value = window.scrollY;
+            text.style.left = value * 5 + 'px';
+            text.style.top = value * 2 + 'px';
+            header.style.top = value * 0.5 + 'px';
+        })
+    </script>
+</body>
+</html>

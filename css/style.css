@@ -1,0 +1,241 @@
+@import url('httos://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800.900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins3display=swap');
+/* Changes for phone, tablets, computers and etc. */
+@media screen and (max-width: 992px) {
+    header {
+      background: #2b1056, #7863d4;
+    }
+  }
+  
+
+@media screen and (max-width: 768px) {
+    nav {
+      background-color: #2b1056, #7863d4;
+    }
+  }
+  
+
+@media screen and (max-width: 576px) {
+    .sample-img {
+      background-color: #2b1056, #7863d4;
+    }
+  }
+  
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+    overflow-x: hidden;
+    background: linear-gradient(#2b1056, #4c318a);
+}
+
+/* Header */
+header {
+    position: 100vh;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Edits the text header */
+header .logo{
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    z-index: 10000;
+}
+
+header ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li{
+    list-style: none;
+    margin-left: 20px;
+}
+
+header ul li a{
+    text-decoration: none;
+    padding: 6px 15px;
+    color: #fff;
+    border-radius: 20px;
+}
+
+header ul li a:hover, header ul li a.active{
+    background: #fff;
+    color: #2b1055;
+}
+
+/* images */
+section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+section img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    pointer-events: none;
+}
+
+/* Section scroll(content) */
+section::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top, #1c0522, transparent);
+    z-index: 1000;
+}
+
+.port::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top, #1c0522, transparent);
+    z-index: 1000;
+}
+
+
+
+/* Button */
+#text {
+    position: absolute;
+    right: -360px;
+    color: #fff;
+    white-space: nowrap;
+    font-size: 7.5vw;
+    z-index: 9;
+    margin-top: 100 0 0;
+    display: flex;
+}
+
+#btn {
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 30px;
+    border-radius: 40px;
+    background: #fff;
+    color: #2b1055;
+    font-size: 1.5em;
+    z-index: 9;
+    transform: translate(100px);
+    margin-left: 10%;
+}
+
+.button {
+    color: #fff;
+    background-color: black;
+    padding: 10px 40px;
+    margin-top: 10px;
+    width: max-content;
+    cursor: pointer;
+}
+
+/* About me */
+.sec {
+    position: relative;
+    padding: 100px;
+    background: #1c0522;
+}
+
+.sec h2{
+    font-size: 3.5em;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.sec p{
+    font-size: 1.2em;
+    color: #fff;
+}
+
+/* Portfolio */
+.port {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    grid-template-rows: minmax(0, 1fr) minmax(0, 1fr);
+    gap: 20px;
+    background-color:#1c0522;
+}
+
+.port img {
+    width: 100%;
+}
+
+.box {
+    display: flex;
+}
+
+/* Contact me */
+.cap {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.form-wrapper {
+    background-color:#1c0522;
+    width: 450px;
+}
+
+.heading {
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.form-input {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.form-input ::placeholder{
+    color: white;
+}
+
+input {
+    padding: 10px 20px;
+    width: 100%;
+    outline: none;
+    border: none;
+    background-color: #482a5a;
+}
+
+/* Headline */
+.form-wrapper h2 {
+    color: #fff;
+}
